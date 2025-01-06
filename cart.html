@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: lightgray; 
+            color: black; 
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: darkred; 
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 400px;
+            height: 250px;
+            border: 2px solid darkgray; 
+            border-radius: 5px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .navigation {
+            margin-top: 20px;
+        }
+        .navigation a {
+            font-size: 18px;
+            text-decoration: none;
+            color: blue; 
+        }
+        .navigation a:hover {
+            color: darkblue;
+            text-decoration: underline;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-container form {
+            display: inline-block;
+            width: 100%;
+        }
+        .form-container input[type="number"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 60%;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: darkred;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Your Shopping Cart</h1>
+        </div>
+        <div class="image-container">
+            <img src="C:/Users/lenovo/OneDrive/Desktop/Assignment%202/cart" alt="Cart Image">
+        </div>
+        <div class="content">
+            <p>The products in your cart!</p>
+        </div>
+        <div class="form-container">
+            <form action="/update_cart" method="POST">
+                <input type="number" name="quantity" placeholder="Enter quantity" min="1" required>
+                <button type="submit">Update Cart</button>
+            </form>
+        </div>
+        <div class="navigation">
+            <a href="catalogue.html">Go to Catalogue</a>
+        </div>
+    </div>
+</body>
+</html>
