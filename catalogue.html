@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            color: black;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: darkgreen;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 400px;
+            height: 200px;
+            border: 2px solid darkgray;
+            border-radius: 5px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .product-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .product-list li {
+            margin: 10px 0;
+        }
+        .product-list a {
+            text-decoration: none;
+            font-size: 18px;
+            color: darkblue;
+        }
+        .product-list a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-container form {
+            display: inline-block;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        .form-container input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        .form-container button {
+            padding: 10px 20px;
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Product Catalogue</h1>
+        </div>
+        <div class="image-container">
+            <img src="C:/Users/lenovo/OneDrive/Desktop/Assignment%202/catalouge" alt="Catalogue Image">
+        </div>
+        <div class="content">
+            <p>Browse our wide selection of products below:</p>
+        </div>
+        <div class="product-list">
+            <ul>
+                <li><a href="#">Product 1</a></li>
+                <li><a href="#">Product 2</a></li>
+                <li><a href="#">Product 3</a></li>
+            </ul>
+        </div>
+        <div class="form-container">
+            <form action="/search" method="GET">
+                <input type="text" name="query" placeholder="Search for products...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
